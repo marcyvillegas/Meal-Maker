@@ -99,6 +99,4 @@ let meal = menu.generateRandomMeal();
 //Console log result
 console.log(meal);
 
-//TrY ulitttfsadfsad
-//asfdsf
-//fasdfdsafgitfasdf 
+//TRY PUSHING AGAIN
