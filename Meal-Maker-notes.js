@@ -1,4 +1,9 @@
-//Object Literal with methods
+/*
+
+--- Object Literal with methods ---
+This only prints one object menu
+
+*/
 
 const menu = {
   //Object that has the type of course and its getters and setters
@@ -98,5 +103,3 @@ let meal = menu.generateRandomMeal();
 
 //Console log result
 console.log(meal);
-
-//TRY PUSHING AGAIN
