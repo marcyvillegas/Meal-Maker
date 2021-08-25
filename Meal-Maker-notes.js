@@ -1,9 +1,17 @@
+//Object Literal with methods
+
 const menu = {
   //Object that has the type of course and its getters and setters
   _courses: {
     _appetizers: [],
     _mains: [],
     _desserts: [],
+
+    /*
+    Getters and setters are not used properly
+  
+    Fix the getters and the setters
+    */
 
     //Getters and Setters of appetizers
     get appetizers() {
@@ -28,19 +36,17 @@ const menu = {
     set desserts(dessertsIn) {
       this._desserts = dessertsIn;
     },
-  },
 
-  //Getter of object courses
-  get courses() {
-    return {
-      appetizers: this._courses.appetizers,
-      mains: this._courses.mains,
-      desserts: this._courses.desserts,
-    };
+    //Getter of object courses
+    get courses() {
+      return {
+        appetizers: this._courses.appetizers,
+        mains: this._courses.mains,
+        desserts: this._courses.desserts,
+      };
+    },
   },
-
   ///===============================================================
-
 
   //Method that lets you add any type of course with the dish name and price.
   addDishToCourse(courseName, dishName, dishPrice) {
@@ -61,7 +67,7 @@ const menu = {
     return dishes[randomIndex]; //returns a random dish by returning a random index of the course type array
   },
 
-  
+
   //Method that returns a random meal
   generateRandomMeal() {
     const appetizer = this.getRandomDishFromCourse('appetizers'); //Gets a random appetizer
@@ -85,6 +91,8 @@ menu.addDishToCourse('desserts', 'Cheese Cake', 4.50);
 menu.addDishToCourse('desserts', 'Creme Brule', 4.25);
 menu.addDishToCourse('desserts', 'Cheese Board', 3.25);
 
+console.log(menu.appetizers);
+
 //Assing variable to generateRandomMeal()
 let meal = menu.generateRandomMeal();
 
@@ -92,3 +100,4 @@ let meal = menu.generateRandomMeal();
 console.log(meal);
 
 
+//fasdfasdfasd
