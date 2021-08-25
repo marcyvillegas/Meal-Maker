@@ -1,7 +1,7 @@
 /*
 
 --- Object Literal with methods ---
-This only prints one object menu
+This only prints one object menu  
 
 */
 
@@ -12,34 +12,19 @@ const menu = {
     _mains: [],
     _desserts: [],
 
-    /*
-    Getters and setters are not used properly
-  
-    Fix the getters and the setters
-    */
-
-    //Getters and Setters of appetizers
+    //Getters of appetizers
     get appetizers() {
       return this._appetizers;
     },
-    set appetizers(appetizersIn) {
-      this._appetizers = appetizersIn;
-    },
 
-    //Getters and Setters of mains
+    //Getters of mains
     get mains() {
       return this._mains;
     },
-    set mains(mainsIn) {
-      this._mains = mainsIn;
-    },
 
-    //Getters and Setters of desserts
+    //Getters of desserts
     get desserts() {
       return this._desserts;
-    },
-    set desserts(dessertsIn) {
-      this._desserts = dessertsIn;
     },
 
     //Getter of object courses
@@ -51,6 +36,7 @@ const menu = {
       };
     },
   },
+
   ///===============================================================
 
   //Method that lets you add any type of course with the dish name and price.
@@ -96,6 +82,7 @@ menu.addDishToCourse('desserts', 'Cheese Cake', 4.50);
 menu.addDishToCourse('desserts', 'Creme Brule', 4.25);
 menu.addDishToCourse('desserts', 'Cheese Board', 3.25);
 
+//
 console.log(menu.appetizers);
 
 //Assing variable to generateRandomMeal()
